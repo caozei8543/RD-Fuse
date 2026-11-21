@@ -1,0 +1,21 @@
+{
+  "description": "Illustrative routing costs for functional tests; not physical device measurements",
+  "device": "demo_device",
+  "runtime": "example_costs",
+  "validated_for_target_hardware": false,
+  "shared_ms": 0.0,
+  "path_ms": {
+    "L": 0.2,
+    "R": 0.5,
+    "T": 0.5,
+    "C0": 1.0
+  },
+  "windows_ms": {
+    "0": 0.0,
+    "2": 0.15,
+    "4": 0.3,
+    "8": 0.5,
+    "12": 0.8,
+    "16": 1.8
+  }
+}

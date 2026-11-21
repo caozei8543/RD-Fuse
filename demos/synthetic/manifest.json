@@ -1,0 +1,69 @@
+{
+  "data_provenance": "synthetic_demo",
+  "samples": [
+    {
+      "id": "DEMO_000",
+      "rgb": "rgb_000.png",
+      "thermal": "thermal_000.png",
+      "objects": [
+        {
+          "category_id": 0,
+          "bbox": [
+            22,
+            25,
+            10,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DEMO_001",
+      "rgb": "rgb_001.png",
+      "thermal": "thermal_001.png",
+      "objects": [
+        {
+          "category_id": 0,
+          "bbox": [
+            23,
+            26,
+            10,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DEMO_002",
+      "rgb": "rgb_002.png",
+      "thermal": "thermal_002.png",
+      "objects": [
+        {
+          "category_id": 0,
+          "bbox": [
+            24,
+            25,
+            10,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DEMO_003",
+      "rgb": "rgb_003.png",
+      "thermal": "thermal_003.png",
+      "objects": [
+        {
+          "category_id": 0,
+          "bbox": [
+            22,
+            26,
+            10,
+            12
+          ]
+        }
+      ]
+    }
+  ]
+}

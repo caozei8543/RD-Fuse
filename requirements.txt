@@ -1,0 +1,7 @@
+# Install matching PyTorch for your platform first.
+torch>=2.1
+numpy>=1.23
+pillow>=9.5
+PyYAML>=6.0
+pytest>=7
+# Optional for pvt_v2_b0: timm>=1.0.9

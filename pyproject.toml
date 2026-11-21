@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rd-fuse-tools"
+version = "0.3.0"
+description = "RD-Fuse RGB-T detection research tools and tests"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.1", "numpy>=1.23", "pillow>=9.5", "PyYAML>=6.0"]
+
+[project.optional-dependencies]
+pvt = ["timm>=1.0.9"]
+test = ["pytest>=7.0"]
+coco = ["pycocotools>=2.0.7"]
+
+[tool.setuptools]
+packages = ["rd_fuse"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

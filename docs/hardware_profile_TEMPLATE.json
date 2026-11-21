@@ -1,0 +1,13 @@
+{
+  "status": "TEMPLATE_ONLY_FILL_FROM_ACTUAL_DEVICE",
+  "device": "Jetson Orin NX 16GB",
+  "runtime": "TensorRT FP16",
+  "watt_mode": 25,
+  "fixed_clocks": null,
+  "validated_for_target_hardware": false,
+  "shared_ms": null,
+  "path_ms": {"L": null, "R": null, "T": null, "C0": null},
+  "windows_ms": {"0": 0, "2": null, "4": null, "8": null, "12": null, "16": null},
+  "full_configuration_C16_mean_ms": null,
+  "notes": "Replace nulls using raw measured engine/dispatch timings and preserve measurement logs. Do not set validated true without verification."
+}

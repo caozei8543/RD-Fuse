@@ -1,0 +1,27 @@
+{
+  "source": "paper/Manuscript.pdf, Tables I-IV",
+  "reported_accuracy": {
+    "M3FD": {
+      "mAP50_percent": 90.1,
+      "mAP50_95_percent": 62.7
+    },
+    "LLVIP": {
+      "mAP50_percent": 94.8,
+      "mAP50_95_percent": 62.2
+    }
+  },
+  "reported_efficiency": {
+    "Jetson_Orin_NX": "16 GB, 25 W fixed clocks, TensorRT FP16, batch=1",
+    "reference_baseline": "Dual-YOLOv11s",
+    "average_executed_GFLOPs": 19.8,
+    "maximum_GFLOPs": 37.2,
+    "parameters_M": 14.8,
+    "mean_latency_ms": 17.6,
+    "P95_latency_ms": 23.9,
+    "reciprocal_mean_latency_FPS": 56.8,
+    "claimed_average_GFLOPs_reduction_percent": 41.6,
+    "claimed_mean_latency_reduction_percent": 50.3,
+    "reference_latency_Tref_ms": null
+  },
+  "record_type": "values reported in the manuscript"
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Routing cost values confirmed by the author in conversation; original profiler traces not bundled. For configuration testing, not independent measurement evidence.",
+  "provenance": "Initially proposed as a numerical example, subsequently confirmed by the author; no raw device trace supplied.",
+  "device": "NVIDIA Jetson Orin NX 16 GB",
+  "runtime": "TensorRT FP16 (author-reported intended hardware)",
+  "validated_for_target_hardware": false,
+  "shared_ms": 5.0,
+  "path_ms": {
+    "L": 7.0,
+    "R": 10.2,
+    "T": 10.6,
+    "C0": 12.8
+  },
+  "windows_ms": {
+    "0": 0.0,
+    "2": 0.55,
+    "4": 1.25,
+    "8": 3.0,
+    "12": 6.5,
+    "16": 12.2
+  },
+  "reference_latency_ms": 30.0,
+  "budget_ratios": [
+    0.7,
+    0.85,
+    1.0
+  ]
+}

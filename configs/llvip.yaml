@@ -1,0 +1,95 @@
+# Reference execution configuration; physical batch and scheduler policy are configurable.
+model:
+  backbone: pvt_v2_b0
+  pretrained: true
+  num_classes: 1
+  image_size: 640
+  semantic_size: 40
+  grid: 8
+training:
+  seed: 42
+  seeds:
+  - 42
+  - 3407
+  - 2026
+  batch_size: 16
+  learning_rate: 0.0002
+  weight_decay: 0.05
+  alpha: 0.1
+  beta: 0.05
+  gamma: 0.25
+  delta: 0.1
+  align_global: 0.5
+  align_local: 0.5
+  hard_neg: 8
+  infonce_temperature: 0.07
+  reliability_margin: 0.1
+  degraded_probability: 0.5
+  sampled_windows: 4
+  regret_temperature_start: 1.0
+  regret_temperature_end: 0.2
+  lam_ms_inverse: 0.005
+  budget_ratios:
+  - 0.7
+  - 0.85
+  - 1.0
+  budget_ratio: 0.7
+  refresh_every_epochs: 5
+  candidate_counts:
+  - 0
+  - 2
+  - 4
+  - 8
+  - 12
+  - 16
+  m3fd_epochs:
+  - 70
+  - 35
+  - 55
+  llvip_epochs:
+  - 50
+  - 25
+  - 45
+  adam_betas:
+  - 0.9
+  - 0.999
+  adam_eps: 1.0e-08
+  min_learning_rate: 2.0e-06
+  grad_clip_norm: 2.0
+  warmup_epochs: 5
+  lr_schedule: cosine
+  effective_batch_size: 16
+  horizontal_flip_probability: 0.5
+  regret_max_candidates: 9
+  stage_epochs:
+  - 50
+  - 25
+  - 45
+  physical_batch_size:
+    forced: 4
+    utility: 1
+    regret: 1
+  accumulation_steps:
+    forced: 4
+    utility: 16
+    regret: 16
+profile: null
+evaluation:
+  score_threshold: 0.2
+  nms_iou_threshold: 0.5
+  max_per_level: 100
+  max_detections: 300
+  coco_max_detections:
+  - 1
+  - 10
+  - 100
+preprocessing:
+  interpolation: bilinear
+  padding_value: 0
+  pixel_scale: 255
+  rgb_darkening:
+  - 0.6
+  - 0.9
+  thermal_noise_sigma:
+  - 0.01
+  - 0.04

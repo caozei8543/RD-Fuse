@@ -1,0 +1,33 @@
+# Offline smoke-test ONLY; all values are synthetic/demo configuration.
+model:
+  backbone: tiny
+  pretrained: false
+  num_classes: 1
+  image_size: 64
+  semantic_size: 8
+  grid: 8
+training:
+  seed: 42
+  batch_size: 1
+  learning_rate: 0.0002
+  weight_decay: 0.05
+  alpha: 0.10
+  beta: 0.05
+  gamma: 0.25
+  delta: 0.10
+  align_global: 0.5
+  align_local: 0.5
+  hard_neg: 8
+  infonce_temperature: 0.07
+  reliability_margin: 0.1
+  degraded_probability: 0.5
+  sampled_windows: 4
+  regret_temperature: 0.2
+  lam_ms_inverse: 0.005
+  budget_ratio: 0.70
+  refresh_every_epochs: 5
+  candidate_counts: [0, 2, 4, 8, 12, 16]
+  forced_epochs: 1
+  utility_epochs: 1
+  regret_epochs: 1
+profile: configs/demo_profile.json

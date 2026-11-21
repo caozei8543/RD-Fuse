@@ -1,0 +1,7 @@
+dataset,seed,mAP50_95_percent,provenance
+M3FD,42,62.48,author-confirmed discussion value; initially constructed from published summary; raw run log not supplied
+M3FD,3407,62.70,author-confirmed discussion value; initially constructed from published summary; raw run log not supplied
+M3FD,2026,62.92,author-confirmed discussion value; initially constructed from published summary; raw run log not supplied
+LLVIP,42,62.00,author-confirmed discussion value; initially constructed from published summary; raw run log not supplied
+LLVIP,3407,62.20,author-confirmed discussion value; initially constructed from published summary; raw run log not supplied
+LLVIP,2026,62.40,author-confirmed discussion value; initially constructed from published summary; raw run log not supplied
